@@ -183,6 +183,7 @@ class QuadraticDistance(MetricGenerator):
                 const_cov=R)
 
         d = term1 - 2 * term2 + term3
+        print(d)
         return np.sqrt(d.item())
 
     def quadratic_dist_pt(self, trth, trck, R):
@@ -271,6 +272,7 @@ class QuadraticDistance(MetricGenerator):
                 var_cov2=trck_covs)
 
         d = term1 - 2 * term2 + term3
+        print(d)
         return np.sqrt(d.item())
 
     def quadratic_dist_tt(self, trth, trck, R):
@@ -364,6 +366,7 @@ class QuadraticDistance(MetricGenerator):
                 var_cov2=trck_covs)
 
         d = term1 - 2 * term2 + term3
+        print(d)
         return np.sqrt(d.item())
 
     def compute_over_time(self, measured_states, truth_states):
