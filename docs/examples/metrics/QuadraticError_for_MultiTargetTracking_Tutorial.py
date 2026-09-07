@@ -493,7 +493,7 @@ filter_data_dict = {'filter model': 'GMPHD',
                     'updater': extended_kalman_updater}
 
 reward_function = QuadraticInformationGain(
-    num_samples=250,
+    num_samples=150,
     state_dim=4,
     filter_data=filter_data_dict,
     kernel='Gaussian',
