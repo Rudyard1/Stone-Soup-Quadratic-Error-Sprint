@@ -515,7 +515,7 @@ all_measurementsA = []
 sensor_history_A = defaultdict(dict)
 
 for n, timestep in enumerate(timesteps[1:]):
-    print(f"Timestep {n + 2}", end="\r")
+    # print(f"Timestep {n + 2}", end="\r")
     tracks_by_timeA.append([])
     all_gaussiansA.append([])
 
@@ -674,7 +674,7 @@ all_measurementsB = []
 sensor_history_B = defaultdict(dict)
 
 for n, timestep in enumerate(timesteps[1:]):
-    print(f"Timestep {n + 2}", end="\r")
+    # print(f"Timestep {n + 2}", end="\r")
     tracks_by_timeB.append([])
     all_gaussiansB.append([])
 
