@@ -132,12 +132,12 @@ class QuadraticDistance(MetricGenerator):
         Psi = len(trck)
 
         # set weights to one for non-weighted states
-        if isinstance(self.truths_type, TaggedWeightedGaussianState):
+        if self.truths_type == TaggedWeightedGaussianState:
             trth_weights = np.array([t.weight for t in trth])
         else:
             trth_weights = np.ones(Phi)
 
-        if isinstance(self.tracks_type, TaggedWeightedGaussianState):
+        if self.tracks_type == TaggedWeightedGaussianState:
             trck_weights = np.array([t.weight for t in trck])
         else:
             trck_weights = np.ones(Psi)
@@ -183,8 +183,7 @@ class QuadraticDistance(MetricGenerator):
                 const_cov=R)
 
         d = term1 - 2 * term2 + term3
-        print(d)
-        return np.sqrt(d.item())
+        return np.sqrt(np.abs(d.item()))
 
     def quadratic_dist_pt(self, trth, trck, R):
         """
@@ -213,12 +212,12 @@ class QuadraticDistance(MetricGenerator):
         Psi = len(trck)
 
         # set weights to one for non-weighted states
-        if isinstance(self.truths_type, TaggedWeightedGaussianState):
+        if self.truths_type == TaggedWeightedGaussianState:
             trth_weights = np.array([t.weight for t in trth])
         else:
             trth_weights = np.ones(Phi)
 
-        if isinstance(self.tracks_type, TaggedWeightedGaussianState):
+        if self.tracks_type == TaggedWeightedGaussianState:
             trck_weights = np.array([t.weight for t in trck])
         else:
             trck_weights = np.ones(Psi)
@@ -272,8 +271,7 @@ class QuadraticDistance(MetricGenerator):
                 var_cov2=trck_covs)
 
         d = term1 - 2 * term2 + term3
-        print(d)
-        return np.sqrt(d.item())
+        return np.sqrt(np.abs(d.item()))
 
     def quadratic_dist_tt(self, trth, trck, R):
         """
@@ -302,12 +300,12 @@ class QuadraticDistance(MetricGenerator):
         Psi = len(trck)
 
         # set weights to one for non-weighted states
-        if isinstance(self.truths_type, TaggedWeightedGaussianState):
+        if self.truths_type == TaggedWeightedGaussianState:
             trth_weights = np.array([t.weight for t in trth])
         else:
             trth_weights = np.ones(Phi)
 
-        if isinstance(self.tracks_type, TaggedWeightedGaussianState):
+        if self.tracks_type == TaggedWeightedGaussianState:
             trck_weights = np.array([t.weight for t in trck])
         else:
             trck_weights = np.ones(Psi)
@@ -366,8 +364,7 @@ class QuadraticDistance(MetricGenerator):
                 var_cov2=trck_covs)
 
         d = term1 - 2 * term2 + term3
-        print(d)
-        return np.sqrt(d.item())
+        return np.sqrt(np.abs(d.item()))
 
     def compute_over_time(self, measured_states, truth_states):
         """
