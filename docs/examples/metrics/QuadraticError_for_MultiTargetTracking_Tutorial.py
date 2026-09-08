@@ -92,6 +92,7 @@ Applications of the Quadratic Distance to Multi-Target Tracking
 #
 # .. math::
 #    :nowrap:
+#
 #     \begin{align}
 #     \mathcal{Q}_\Lambda(\varphi - \psi) &= \int \varphi(x)\Lambda(x,y)
 #     \varphi(y)\mathrm dx \mathrm dy \\
@@ -124,6 +125,7 @@ Applications of the Quadratic Distance to Multi-Target Tracking
 #
 # .. math::
 #    :nowrap:
+#
 #     \begin{align}
 #     \Lambda(x,y)&: \mathbb{R}^d \times \mathbb{R}^d \mapsto \mathbb{R};\\
 #     \Lambda(x,y)&=\Lambda(y,x);\\
@@ -163,6 +165,7 @@ Applications of the Quadratic Distance to Multi-Target Tracking
 #
 # .. math::
 #    :nowrap:
+#
 #     \begin{align}
 #     \mathbb E_{\boldsymbol X}\big[\mathcal Q_\Lambda(\boldsymbol X - \varphi)\big] &=
 #     \mathbb E_{\boldsymbol X}\bigg[\int X(x)\Lambda(x,y)X(y)\mathrm dx \mathrm dy\bigg] \\
@@ -175,6 +178,7 @@ Applications of the Quadratic Distance to Multi-Target Tracking
 #
 # .. math::
 #    :nowrap:
+#
 #     \begin{align}
 #     \mathbb E_{\boldsymbol X}\big[\mathcal Q_\Lambda(\boldsymbol X - \varphi)\big] &=
 #     \int \Lambda(x,y)\mathrm{cov}_{\boldsymbol X}(x,y)\mathrm dx \mathrm dy \\
@@ -198,6 +202,7 @@ Applications of the Quadratic Distance to Multi-Target Tracking
 #
 # .. math::
 #    :nowrap:
+#
 #     \begin{align}
 #     \mathbb E_{\boldsymbol Z}\big[\mathbb E_{\boldsymbol X}\big[\mathcal Q_\Lambda(
 #     \boldsymbol X - \varphi)\big]\big] &=  \int \Lambda(x,y)\mathrm{cov}_{\boldsymbol X}
