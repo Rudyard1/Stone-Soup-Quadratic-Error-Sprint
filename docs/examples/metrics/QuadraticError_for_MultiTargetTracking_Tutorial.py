@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+# sphinx_gallery_thumbnail_number = 4
 
 """
 ===============================================================
@@ -90,7 +91,7 @@ Applications of the Quadratic Distance to Multi-Target Tracking
 # Expanding this expression gives the following
 #
 # .. math::
-#
+#    :nowrap:
 #     \begin{align}
 #     \mathcal{Q}_\Lambda(\varphi - \psi) &= \int \varphi(x)\Lambda(x,y)
 #     \varphi(y)\mathrm dx \mathrm dy \\
@@ -122,7 +123,7 @@ Applications of the Quadratic Distance to Multi-Target Tracking
 # The kernel :math:`\Lambda(x,y)` may be any symmetric, positive-definite function, i.e.,
 #
 # .. math::
-#
+#    :nowrap:
 #     \begin{align}
 #     \Lambda(x,y)&: \mathbb{R}^d \times \mathbb{R}^d \mapsto \mathbb{R};\\
 #     \Lambda(x,y)&=\Lambda(y,x);\\
@@ -161,7 +162,7 @@ Applications of the Quadratic Distance to Multi-Target Tracking
 # (MQE) of :math:`\varphi` as an estimator of :math:`X`:
 #
 # .. math::
-#
+#    :nowrap:
 #     \begin{align}
 #     \mathbb E_{\boldsymbol X}\big[\mathcal Q_\Lambda(\boldsymbol X - \varphi)\big] &=
 #     \mathbb E_{\boldsymbol X}\bigg[\int X(x)\Lambda(x,y)X(y)\mathrm dx \mathrm dy\bigg] \\
@@ -173,7 +174,7 @@ Applications of the Quadratic Distance to Multi-Target Tracking
 # This can be factorised into the following decomposition
 #
 # .. math::
-#
+#    :nowrap:
 #     \begin{align}
 #     \mathbb E_{\boldsymbol X}\big[\mathcal Q_\Lambda(\boldsymbol X - \varphi)\big] &=
 #     \int \Lambda(x,y)\mathrm{cov}_{\boldsymbol X}(x,y)\mathrm dx \mathrm dy \\
@@ -196,7 +197,7 @@ Applications of the Quadratic Distance to Multi-Target Tracking
 # expression of information gain based on the MQE
 #
 # .. math::
-#
+#    :nowrap:
 #     \begin{align}
 #     \mathbb E_{\boldsymbol Z}\big[\mathbb E_{\boldsymbol X}\big[\mathcal Q_\Lambda(
 #     \boldsymbol X - \varphi)\big]\big] &=  \int \Lambda(x,y)\mathrm{cov}_{\boldsymbol X}
